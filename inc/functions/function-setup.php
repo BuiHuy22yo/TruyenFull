@@ -23,7 +23,7 @@ if (!function_exists('register_styles')) {
     function register_styles()
     {
         // CTWP_LIBRARY
-        wp_enqueue_style('bootstrap-style', CTWP_LIBRARY . '/bootstrap/bootstrap.min.css', array(), '5.0.2');
+        wp_enqueue_style('bootstrap-style', CTWP_LIBRARY . '/bootstrap-5/bootstrap.min.css', array(), '5.0.2');
         wp_enqueue_style('fontawesome-style', CTWP_LIBRARY . '/fontawesome-611/css/all.css', array(), '6.1.1', "all");
         // CTWP_STYLE
         wp_enqueue_style('main-style', CTWP_BUILD_URI . '/css/main.css', array(), false, 'all');

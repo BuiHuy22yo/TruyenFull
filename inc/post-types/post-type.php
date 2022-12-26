@@ -40,7 +40,7 @@ if (!function_exists('ctwp_register_post_type_story')) {
             'capability_type' => 'page',
             'menu_position' => null,
             'hierarchical' => false,
-
+            'taxonomies' => array('category'),
         );
 
         register_post_type('story', $args);

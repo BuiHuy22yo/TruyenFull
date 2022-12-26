@@ -164,3 +164,22 @@ if (!function_exists('ctwp_has_bottom_bar')) {
         return $screens;
     }
 }
+
+/**
+ * Page Header inner classes.
+ *
+ * @param string $position Menu position.
+ *
+ * @return void
+ */
+if (!function_exists('header_inner_style')) {
+    function header_inner_style()
+    {
+        $properties = 'background-color:';
+        $color = '#14425d';
+
+        $style = $properties.$color;
+
+        echo $style;
+    }
+}

@@ -14,7 +14,7 @@
     <?php wp_head() ?>
 
 </head>
-<body <?php body_class('truyenfull') ?>>
+<body <?php body_class('ctwp-theme') ?>>
 <?php wp_body_open(); ?>
 <div id="wrapper">
 

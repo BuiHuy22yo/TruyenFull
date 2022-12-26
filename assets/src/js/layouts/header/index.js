@@ -25,20 +25,18 @@
 		}
 
 		mobile() {
-			$('#dl-menu').dlmenu({
-				animationClasses: {classin: 'dl-animate-in-5', classout: 'dl-animate-out-5'}
-			});
+
 		}
 
 		language() {
-			$('#handleChangeLanguage').on('click', function (e) {
-				$('.add_class_active_lg').toggleClass('active');
-			});
+			// $('#handleChangeLanguage').on('click', function (e) {
+			// 	$('.add_class_active_lg').toggleClass('active');
+			// });
 		}
 		menucateshowct() {
-			$('.header-cate-menu').on('click', function (e) {
-				$('.show-cate-main-custom').toggleClass('active');
-			});
+			// $('.header-cate-menu').on('click', function (e) {
+			// 	$('.show-cate-main-custom').toggleClass('active');
+			// });
 		}
 	}
 

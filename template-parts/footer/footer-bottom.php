@@ -1,6 +1,6 @@
 <?php
 $current_year = date("Y");
-$footer_text = 'Copyright'.$current_year. '&copy; <strong>Ctwp Theme</strong>'
+$footer_text = 'Copyright '.$current_year. '&copy; <strong>Ctwp Theme</strong>'
 ?>
 
 
