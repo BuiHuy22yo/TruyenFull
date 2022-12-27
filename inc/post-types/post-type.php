@@ -1,10 +1,12 @@
 <?php
 /**
- * Ctwp custom post type
+ * Ctwp Post Type
+ *
+ * @package  Ctwp\Structures
  */
 
 /**
- * Ctwp post type story
+ * Post type story
  */
 if (!function_exists('ctwp_register_post_type_story')) {
     function ctwp_register_post_type_story()
@@ -31,13 +33,13 @@ if (!function_exists('ctwp_register_post_type_story')) {
                 'title'
             ),
             'rewrite' => array(
-                'slug' => 'story',
+                'slug' => '/',
                 'with_front' => true,
                 'feeds' => true,
                 'pages' => true,
             ),
             'menu_icon' => 'dashicons-portfolio',
-            'capability_type' => 'page',
+            'capability_type' => 'post',
             'menu_position' => null,
             'hierarchical' => false,
             'taxonomies' => array('category'),
@@ -83,7 +85,7 @@ if (!function_exists('ctwp_register_post_type_chapter')) {
                 'pages' => true,
             ),
             'menu_icon' => 'dashicons-portfolio',
-            'capability_type' => 'page',
+            'capability_type' => 'post',
             'menu_position' => null,
             'hierarchical' => false,
 

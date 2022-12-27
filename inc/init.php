@@ -16,6 +16,7 @@ require CTWP_DIR_PATH . '/inc/functions/function-setup.php';
  * Helper functions
  */
 require CTWP_DIR_PATH . '/inc/helpers/acf-config.php';
+require CTWP_DIR_PATH . '/inc/helpers/helper-ajax.php';
 
 /**
  * Structure.
@@ -23,6 +24,8 @@ require CTWP_DIR_PATH . '/inc/helpers/acf-config.php';
  */
 require CTWP_DIR_PATH . '/inc/structure/structure-footer.php';
 require CTWP_DIR_PATH . '/inc/structure/structure-header.php';
+require CTWP_DIR_PATH . '/inc/structure/structure-pages.php';
+require CTWP_DIR_PATH . '/inc/structure/structure-posts.php';
 
 /**
  * Custom Theme Post Types

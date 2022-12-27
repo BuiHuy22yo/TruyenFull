@@ -6,12 +6,37 @@
 if (!function_exists('ctwp_setup')) {
     function ctwp_setup()
     {
+        global $content_width;
+
+        if (!isset($content_width)) {
+            $content_width = 1170;
+        }
+
+        /* add woocommerce support */
+        add_theme_support( 'woocommerce' );
+
+        /* add title tag support */
+        add_theme_support( 'title-tag' );
+
+        /* Add support for post thumbnails */
+        add_theme_support( 'post-thumbnails' );
+
         /*  Register menus. */
         register_nav_menus(array(
             'primary' => __('Main Menu', CTWP_DOMAIN),
             'primary_mobile' => __('Main Menu - Mobile', CTWP_DOMAIN),
             'footer' => __('Footer Menu', CTWP_DOMAIN),
         ));
+
+        /* Add support for HTML5 */
+        add_theme_support( 'html5', array(
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+            'widgets',
+        ) );
     }
     add_action('after_setup_theme', 'ctwp_setup');
 }
