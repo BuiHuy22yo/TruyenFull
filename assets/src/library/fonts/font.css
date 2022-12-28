@@ -37,3 +37,62 @@
 	url('./poppins-v15-latin/poppins-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
 	url('./poppins-v15-latin/poppins-v15-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
 }
+
+/* roboto-300 - sans-serif */
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./Roboto/Roboto-Light.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('./Roboto/Roboto-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+/* roboto-400 - sans-serif */
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./Roboto/Roboto-Regular.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('Roboto/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* roboto-700 - sans-serif */
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	src: url('./Roboto/Roboto-Bold.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('Roboto/Roboto-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+
+/* Roboto_Condensed-300 - sans-serif */
+@font-face {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./Roboto_Condensed/RobotoCondensed-Light.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('./Roboto_Condensed/RobotoCondensed-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+/* Roboto_Condensed-400 - sans-serif */
+@font-face {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./Roboto_Condensed/RobotoCondensed-Regular.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('Roboto_Condensed/RobotoCondensed-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* Roboto_Condensed-700 - sans-serif */
+@font-face {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	src: url('./Roboto_Condensed/RobotoCondensed-Bold.ttf'); /* IE9 Compat Modes */
+	src: local(''),
+	url('Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}

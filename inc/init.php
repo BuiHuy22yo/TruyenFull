@@ -16,7 +16,8 @@ require CTWP_DIR_PATH . '/inc/functions/function-setup.php';
  * Helper functions
  */
 require CTWP_DIR_PATH . '/inc/helpers/acf-config.php';
-require CTWP_DIR_PATH . '/inc/helpers/helper-ajax.php';
+require CTWP_DIR_PATH . '/inc/helpers/helpers-ajax.php';
+require CTWP_DIR_PATH . '/inc/helpers/helpers-frontend.php';
 
 /**
  * Structure.

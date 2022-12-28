@@ -1,9 +1,12 @@
 a {
   text-decoration: none;
   color: $color-black;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 400;
+}
+.button {
+  cursor: pointer;
 }
 
 

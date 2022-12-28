@@ -1,10 +1,10 @@
 // all page
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: $body_font, sans-serif;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: normal;
-	line-height: 24px ;
+	line-height: 20px ;
 	background: $color-primary-background;
 	color: $color-primary-text;
 }
@@ -17,34 +17,62 @@ body {
 	 list-style: none;
  }
 
-.T18B_24 {
-	font-family: "Roboto", sans-serif;
+.FS18B {
+	font-family: $body_font, sans-serif;
 	 font-style: normal;
 	 font-weight: bold;
 	 font-size: 18px;
-	 line-height: 24px;
+	 line-height: 1.5;
 }
 
-.T18R_24{
-	font-family: "Roboto", sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 24px;
-}
-
-.T18M_24 {
-	font-family: "Roboto", sans-serif;
+.FS18R{
+	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 1.5
 }
 
-.T16M_56 {
-	font-family: "Roboto", sans-serif;
+.FS16B {
+	font-family: $body_font, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.FS16R {
+	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 21px;
+	line-height: 1.5;
+}
+.FS14B {
+	font-family: $body_font, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.FS14R {
+	font-family: $body_font, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.FS12B {
+	font-family: $body_font, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.FS12R {
+	font-family: $body_font, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.5;
 }
