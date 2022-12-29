@@ -30,3 +30,28 @@ if (!function_exists('ctwp_get_list_categories')) {
     }
 }
 
+/**
+ * Get List Story
+ *
+ * @return array
+ */
+if (!function_exists('ctwp_get_list_story')) {
+    function ctwp_get_list_story($args = array())
+    {
+        $data = [];
+        $query = new WP_Query($args);
+        $total = $query->found_posts;
+        $max_page = $query->max_num_pages;
+        if ($query->have_posts()) {
+            $data['data'] = $query->posts;
+            $data['total'] = $total;
+            $data['max_page'] = $max_page;
+            $data['current_page'] = $args['paged'];
+            $data['posts_per_page'] = $args['posts_per_page'];
+            wp_reset_postdata();
+        }
+        return $data;
+
+    }
+}
+

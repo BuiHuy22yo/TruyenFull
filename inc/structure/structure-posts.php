@@ -20,6 +20,14 @@ if (!function_exists('ctwp_blog_article_classes')) {
         if (!empty($classes)) echo implode(' ', $classes);
     }
 }
+// Blog Article Pagination
+if (!function_exists('ctwp_blog_article_pagination')) {
+    function ctwp_blog_article_pagination()
+    {
+        $html = '';
+        return $html;
+    }
+}
 /**
  * Single
  *

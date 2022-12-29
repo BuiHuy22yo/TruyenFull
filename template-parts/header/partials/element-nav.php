@@ -39,7 +39,9 @@ $before_icon_setting = '<i class="fa-solid fa-gear"></i>';
                 <span class="text">Tùy chỉnh</span>
                 <span class="after-icon"><?php echo $after_icon ?></span>
             </div>
-            <ul class="dropdown-inner dropdown-custom-display"></ul>
+            <ul class="dropdown-inner dropdown-custom-display">
+                <?php echo ctwp_header_setting_elements(); ?>
+            </ul>
         </li>
     </ul>
 </div>

@@ -6,11 +6,6 @@
  */
 
 get_header();
-
+get_template_part('template-parts/pages/page', 'home');
+get_footer();
 ?>
-
-<div id="content" class="blog-wrapper blog-archive page-wrapper">
-
-</div>
-
-<?php get_footer(); ?>
