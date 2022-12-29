@@ -21,8 +21,8 @@ if (!function_exists('ctwp_blog_article_classes')) {
     }
 }
 // Blog Article Pagination
-if (!function_exists('ctwp_blog_article_pagination')) {
-    function ctwp_blog_article_pagination()
+if (!function_exists('ctwp_pagination')) {
+    function ctwp_pagination()
     {
         $html = '';
         return $html;
