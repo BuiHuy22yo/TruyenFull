@@ -2,11 +2,14 @@
 body {
 	font-family: $body_font, sans-serif;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
-	line-height: 20px ;
+	line-height: 1.5 ;
 	background: $color-primary-background;
 	color: $color-primary-text;
+	@media (min-width: 768px) {
+		font-size: 14px;
+	}
 }
  ul, li, body, p{
 	 margin: 0;

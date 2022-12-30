@@ -112,3 +112,42 @@ if (!function_exists('ctwp_get_list_chapter')) {
     }
 }
 
+/**
+ * Get List Number Pagination
+ *
+ * @return array
+ */
+if (!function_exists('ctwp_get_list_number_pagination')) {
+    function ctwp_get_list_number_pagination($current_page = 1, $max_page = 1)
+    {
+        $data = [];
+        $flag = false;
+        $minus = $current_page > $max_page - 2 ? $max_page - 4 : $current_page - 2;
+        $plus = $current_page <= 2 ? 5 : $current_page + 2;
+
+        for ($page = 1; $page <= $max_page; $page++) {
+            $item = [
+                'page' => 0,
+                'class' => ''
+            ];
+            if ($page != 1 && $page < $minus || $page != $max_page && $page > $plus) {
+                if(!$flag){
+                    array_push($data,$item);
+                }
+                $flag = true;
+            }
+            else {
+                $flag = false;
+                $item['page'] = $page;
+                if ($current_page == $page ) {
+                    $item['class'] = 'pagination-item-active';
+                }
+                array_push($data,$item);
+            }
+        }
+
+        return $data;
+
+    }
+}
+
