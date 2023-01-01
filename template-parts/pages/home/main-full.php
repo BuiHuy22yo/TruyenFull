@@ -4,12 +4,16 @@ $array = array(
     'meta_key' => 'isfull',
     'meta_value' => 1,
 );
-$data = ctwp_get_list_story($array)
+$data = ctwp_get_list_story($array);
+$icon = CTWP_ICON_RIGHT
 ?>
 <div class="row main-inner main-full">
     <div class="col-12">
         <div class="inner">
-            <div class="title">Truyên Đã Hoàn thanh</div>
+            <div class="title d-flex align-items-center">
+                <h2><?php echo esc_html__('Truyên Đã Hoàn thanh', CTWP_DOMAIN ) ?></h2>
+                <span><?php echo $icon ?></span>
+            </div>
         </div>
     </div>
     <?php if ($data && is_array($data)) {

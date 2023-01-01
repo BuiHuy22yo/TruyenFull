@@ -5,7 +5,9 @@ $data = ctwp_get_list_story_read()
     <div class="row main-inner main-read">
         <div class="col-12">
             <div class="inner">
-                <div class="title">Truyện Đã Đọc</div>
+                <div class="title">
+                    <h2><?php echo esc_html__('Truyện Đã Đọc', CTWP_DOMAIN) ?></h2>
+                </div>
             </div>
         </div>
         <div class="col-12">

@@ -1,4 +1,5 @@
 <?php
+require get_template_directory() . '/inc/constants/icon.php';
 
 define('CTWP_DIR_PATH', untrailingslashit(get_template_directory()));
 define('CTWP_DIR_URI', untrailingslashit(get_template_directory_uri()));

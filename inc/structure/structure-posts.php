@@ -25,9 +25,9 @@ if (!function_exists('ctwp_pagination')) {
     function ctwp_pagination($current_page = 1, $max_page = 1, $classes = '')
     {
         $html = '';
-        $icon_right = '<i class="fa-solid fa-angle-right"></i>';
-        $icon_ellipsis = '<i class="fa-solid fa-ellipsis"></i>';
-        $icon_left = '<i class="fa-solid fa-angle-left"></i>';
+        $icon_right = CTWP_ICON_RIGHT;
+        $icon_ellipsis = CTWP_ICON_ELLIPSIS;
+        $icon_left = CTWP_ICON_LEFT;
         $pages = ctwp_get_list_number_pagination($current_page, $max_page);
         $disable_prev = $current_page == 1 ? 'pagination-item-disable' : '';
         $disable_next = $current_page == $max_page ? 'pagination-item-disable' : '';
@@ -56,9 +56,43 @@ if (!function_exists('ctwp_pagination')) {
  * Single
  *
  */
-//?>
-<!--<div class="pagination"><ul class="pagination-wrapper">-->
-<!--<li class="pagination-item pagination-item-ellipsis"><span></span></li>-->
-<!--<li class="pagination-item pagination-item-number"><span></span></li>-->
-<!--</ul></div>-->
-<div
+
+/**
+ * Create title post
+ */
+if (!function_exists('ctwp_post_title')) {
+    function ctwp_post_title($id, $link = true)
+    {
+        $html = '';
+        $html .= '<h3 class="post-title text-capitalize">';
+        if ($link) {
+            $html .= '<a href="'.esc_url(get_the_permalink($id)) . '">';
+        }
+        $html .= get_post_meta($id, 'name', true);
+        if ($link) {
+            $html .= '</a>';
+        }
+        $html .= '</h3>';
+        return $html;
+    }
+}
+
+/**
+ * Create thumbnail post
+ */
+if (!function_exists('ctwp_post_thumbnail')) {
+    function ctwp_post_thumbnail($id)
+    {
+        $image_id = get_post_meta($id, 'image', true);
+        $url = $image_id ? wp_get_attachment_url($image_id) : '';
+
+        $html = '';
+        $html .= '<div class="post-thumbnail">';
+        $html .= '<img class="w-100" src="'.$url.'">';
+
+        $html .= '</div>';
+
+        return $html;
+    }
+}
+?>

@@ -7,7 +7,7 @@
 ?>
 
 <?php
-$icon = '<i class="fa-solid fa-magnifying-glass"></i>';
+$icon = CTWP_ICON_MAGNIFYING_GLASS;
 ?>
 
 <!-- Header search -->

@@ -1,3 +1,6 @@
-.footer-inner{
-  @import "component/main";
+.footer {
+  margin-top: 20px;
+  .footer-inner{
+    @import "component/main";
+  }
 }

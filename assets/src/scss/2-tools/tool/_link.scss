@@ -1,9 +1,12 @@
 a {
   text-decoration: none;
-  color: $color-primary-text;
+  color: inherit;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+}
+a:hover {
+  color: inherit;
 }
 .button {
   cursor: pointer;

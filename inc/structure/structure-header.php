@@ -195,7 +195,7 @@ if (!function_exists('header_inner_style')) {
  * @return void
  */
 if (!function_exists('ctwp_header_elements')) {
-    function ctwp_header_elements($location, $class = '')
+    function ctwp_header_elements($location = 'primary', $class = '')
     {
         $menu = wp_nav_menu(array(
             'theme_location' => $location,
@@ -235,15 +235,15 @@ if (!function_exists('ctwp_header_setting_elements')) {
     function ctwp_header_setting_elements()
     {
         $option_background = CTWP_DISPLAY_SETTING_BACKGROUND;
-        $option_font = CTWP_DISPLAY_SETTING_SIZE;
-        $option_size = CTWP_DISPLAY_SETTING_FONT;
+        $option_font = CTWP_DISPLAY_SETTING_FONT;
+        $option_size = CTWP_DISPLAY_SETTING_SIZE;
         $option_line_height = CTWP_DISPLAY_SETTING_LINE_HEIGHT;
         $html = '';
 
         if ($option_background && is_array($option_background)) {
             $html .= '<li class="setting-item">';
             $html .= '<div class="setting-label">Màu nền</div>';
-            $html .= '<div class="setting-select"><select class="form-control">';
+            $html .= '<div class="setting-select"><select>';
             foreach ($option_background as $index => $item) {
                 $html .= '<option value="' . $index . '">' . $item . '</option>';
             }
@@ -252,7 +252,7 @@ if (!function_exists('ctwp_header_setting_elements')) {
         if ($option_font && is_array($option_font)) {
             $html .= '<li class="setting-item">';
             $html .= '<div class="setting-label">Font chữ</div>';
-            $html .= '<div class="setting-select"><select class="form-control">';
+            $html .= '<div class="setting-select"><select>';
             foreach ($option_font as $index => $item) {
                 $html .= '<option value="' . $index . '">' . $item . '</option>';
             }
@@ -261,7 +261,7 @@ if (!function_exists('ctwp_header_setting_elements')) {
         if ($option_size && is_array($option_size)) {
             $html .= '<li class="setting-item">';
             $html .= '<div class="setting-label">Size chữ</div>';
-            $html .= '<div class="setting-select"><select class="form-control">';
+            $html .= '<div class="setting-select"><select>';
             foreach ($option_size as $item) {
                 $html .= '<option value="' . $item . '">' . $item . '</option>';
             }
@@ -270,7 +270,7 @@ if (!function_exists('ctwp_header_setting_elements')) {
         if ($option_line_height && is_array($option_line_height)) {
             $html .= '<li class="setting-item">';
             $html .= '<div class="setting-label">Chiều cao dòng</div>';
-            $html .= '<div class="setting-select"><select class="form-control">';
+            $html .= '<div class="setting-select"><select>';
             foreach ($option_line_height as $item) {
                 $html .= '<option value="' . $item . '">' . $item . '%</option>';
             }
@@ -295,6 +295,20 @@ if (!function_exists('ctwp_header_setting_elements')) {
     }
 }
 
+/**
+ * Get Breadcrumb
+ *
+ */
+if (!function_exists('ctwp_breadcrumb')) {
+    function ctwp_breadcrumb()
+    {
+        $text = 'Đọc truyện online, đọc truyện chữ, truyện full, truyện hay. Tổng hợp đầy đủ và cập nhật liên tục.';
+        $html = '';
+        $html .= '<div>' . $text . '</div>';
+
+        return $html;
+    }
+}
 
 ?>
 

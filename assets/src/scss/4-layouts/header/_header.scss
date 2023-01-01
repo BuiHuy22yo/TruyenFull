@@ -1,7 +1,10 @@
-.header-inner {
-  height: 50px;
-  @import "component/logo";
-  @import "component/search";
-  @import "component/toggle";
-  @import "component/nav";
+.header {
+  margin-bottom: 20px;
+  .header-inner {
+    height: 54px;
+    @import "component/logo";
+    @import "component/search";
+    @import "component/toggle";
+    @import "component/nav";
+  }
 }

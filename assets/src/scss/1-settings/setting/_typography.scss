@@ -4,11 +4,12 @@ body {
 	font-style: normal;
 	font-size: 12px;
 	font-weight: normal;
-	line-height: 1.5 ;
+	line-height: 1.5;
 	background: $color-primary-background;
 	color: $color-primary-text;
 	@media (min-width: 768px) {
 		font-size: 14px;
+		line-height: 22px;
 	}
 }
  ul, li, body, p{
@@ -25,7 +26,7 @@ body {
 	 font-style: normal;
 	 font-weight: bold;
 	 font-size: 18px;
-	 line-height: 1.5;
+	 line-height: 28px;
 }
 
 .FS18R{
@@ -33,7 +34,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1.5
+	line-height: 28px
 }
 
 .FS16B {
@@ -41,7 +42,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 24px;
 }
 
 .FS16R {
@@ -49,33 +50,57 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 24px;
 }
 .FS14B {
 	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 22px;
 }
 .FS14R {
 	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 22px;
 }
 .FS12B {
 	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 18px;
 }
 .FS12R {
 	font-family: $body_font, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 18px;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	width: max-content;
+}
+h1 {
+	font-size: 32px;
+	line-height: 48px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 30px;
+}
+h3 {
+	font-size: 16px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 14px;
+	line-height: 22px;
+}
+h5 {
+	font-size: 12px;
+	line-height: 18px;
 }

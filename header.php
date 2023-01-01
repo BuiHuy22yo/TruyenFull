@@ -24,6 +24,9 @@
         <div class="header-wrapper">
             <?php get_template_part('template-parts/header/header', 'wrapper'); ?>
         </div>
+        <div class="ctwp-breadcrumb">
+            <?php get_template_part('template-parts/breadcrumb/breadcrumb', 'wrapper'); ?>
+        </div>
     </header>
 
     <?php do_action('ctwp_after_header'); ?>
