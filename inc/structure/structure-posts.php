@@ -64,7 +64,7 @@ if (!function_exists('ctwp_post_title')) {
     function ctwp_post_title($id, $link = true)
     {
         $html = '';
-        $html .= '<h3 class="post-title text-capitalize">';
+        $html .= '<h3 class="post-title text-capitalize w-auto">';
         if ($link) {
             $html .= '<a href="'.esc_url(get_the_permalink($id)) . '">';
         }

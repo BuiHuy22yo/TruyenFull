@@ -22,22 +22,39 @@ if (!function_exists('ctwp_get_list_story_read')) {
  * @return void
  */
 if (!function_exists('ctwp_html_categories')) {
-    function ctwp_html_categories()
+    function ctwp_html_categories($select = true )
     {
         $html = '';
         $categories = ctwp_get_list_categories();
-        $all[] =  [
-            'cat_ID' => 1,
-            'name' => 'Tất cả',
-            'link' => '',
-        ];
-        array_splice($categories, 0, 0, $all);
+        if($select) {
+            $all[] =  [
+                'cat_ID' => 1,
+                'name' => 'Tất cả',
+                'link' => '',
+            ];
+            array_splice($categories, 0, 0, $all);
+        }
         if ($categories && is_array($categories)) {
-            $html .= '<div class="categories-select"><select>';
-            foreach ($categories as $cat) {
-                $html .= '<option value="' . $cat['cat_ID'] . '">' . $cat['name'] . '</option>';
+            if ($select) {
+                $html .= '<div class="categories-select"><select>';
+            } else {
+                $html .= '<div class="categories"><ul>';
             }
-            $html .= '</select></div>';
+            foreach ($categories as $cat) {
+
+
+                if ($select) {
+                    $html .= '<option value="' . $cat['cat_ID'] . '">' . $cat['name'] . '</option>';
+                } else {
+                    $html .= '<li class="py-1 cat-' . $cat['cat_ID'] . '"><a href="'.$cat['link'].'" class="FS16R">' . $cat['name'] . '</a></li>';
+                }
+            }
+            if ($select) {
+                $html .= '</select></div>';
+            } else {
+                $html .= '</ul></div>';
+            }
+
         }
 
         return $html;

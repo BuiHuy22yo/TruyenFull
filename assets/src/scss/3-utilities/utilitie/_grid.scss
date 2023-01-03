@@ -3,3 +3,10 @@
 		max-width: $container;
 	}
 }
+@media (min-width: 992px){
+	.col-lg-1-5 {
+		flex: 0 0 auto;
+		width: 12.5%;
+	}
+
+}

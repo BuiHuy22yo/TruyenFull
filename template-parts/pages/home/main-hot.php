@@ -30,13 +30,13 @@ $url = home_url('truyen-hot')
         <div class="list">
             <div class="row">
                 <?php foreach ($data as $item) { ?>
-                    <div class="col-3 col-lg-2 item">
+                    <div class="col-3 col-lg-1-5 item">
                         <div class="inner-item">
                             <div class="item-image">
                                 <?php echo ctwp_post_thumbnail($item->ID) ?>
                             </div>
                             <div class="item-full-label"></div>
-                            <div class="item-title">
+                            <div class="item-title text-center">
                                 <?php echo ctwp_post_title($item->ID) ?>
                             </div>
                         </div>

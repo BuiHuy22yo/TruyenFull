@@ -4,7 +4,8 @@ $array = array(
     'meta_key' => 'isfull',
     'meta_value' => 1,
 );
-$data = ctwp_get_list_story($array);
+$body = ctwp_get_list_story($array);
+$data = !empty($body) && array_key_exists('data', $body) ? $body['data'] : [];
 $icon = CTWP_ICON_RIGHT;
 $url = home_url('truyen-full')
 ?>
@@ -23,7 +24,19 @@ $url = home_url('truyen-full')
         <div class="list">
             <div class="row">
                 <?php foreach ($data as $item) { ?>
-                    <div class="col-4"></div>
+                    <div class="col-4 col-lg-2 item">
+                        <div class="inner-item">
+                            <div class="item-image">
+                                <?php echo ctwp_post_thumbnail($item->ID) ?>
+                            </div>
+                            <div class="item-title text-center">
+                                <?php echo ctwp_post_title($item->ID) ?>
+                            </div>
+                            <div class="item-number_chapter text-center">
+                                Full - 350 chương
+                            </div>
+                        </div>
+                    </div>
                 <?php } ?>
             </div>
         </div>

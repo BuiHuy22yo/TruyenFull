@@ -1,0 +1,16 @@
+.sidebar-wrapper {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  padding-bottom: 8px;
+  background-color: $color-background-sidebar;
+  border: 1px solid $color-border-sidebar;
+  .list-category {
+    ul {
+      column-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding-left: 15px;
+    }
+  }
+
+}

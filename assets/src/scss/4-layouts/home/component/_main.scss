@@ -2,6 +2,7 @@
  .title {
   h2 {
    border-bottom: 1px solid $color-border-select;
+   line-height: 31px;
   }
   span {
    padding: 0 5px;
@@ -34,6 +35,12 @@
 
 }
 .main-full{
+ .list {
+  padding: 8px 16px;
+ }
+ .item {
+  padding: 6px;
+ }
 
 }
 .main-read {
