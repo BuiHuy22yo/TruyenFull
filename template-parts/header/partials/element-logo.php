@@ -7,9 +7,7 @@
 ?>
 
 <?php
-$logoDefault = get_field('logo_default', 'option') ? get_field('logo_default', 'option') : '';
-$logoOptional = get_field('logo_optional', 'option');
-$logoMobile = get_field('logo_mobile', 'option');
+$logoDefault = get_field('logo', 'option') ? get_field('logo', 'option') : '';
 $logo_link = site_url();
 $site_title = esc_attr(get_bloginfo('name', 'display'));
 $site_logo_link = wp_get_attachment_url($logoDefault);

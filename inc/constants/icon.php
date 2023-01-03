@@ -6,3 +6,4 @@ define('CTWP_ICON_MAGNIFYING_GLASS', '<i class="fa-solid fa-magnifying-glass"></
 define('CTWP_ICON_LIST', '<i class="fa-solid fa-list"></i>');
 define('CTWP_ICON_CARET_DOWN', '<i class="fa-solid fa-caret-down"></i>');
 define('CTWP_ICON_GEAR', '<i class="fa-solid fa-gear"></i>');
+define('CTWP_ICON_GRIPFIRE', '<i class="fa-brands fa-gripfire"></i>');

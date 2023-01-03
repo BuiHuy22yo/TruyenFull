@@ -35,7 +35,7 @@ if (!function_exists('ctwp_register_post_type_story')) {
                 'title'
             ),
             'rewrite' => array(
-                'slug' => '/',
+                'slug' => 'story',
                 'with_front' => true,
                 'feeds' => true,
                 'pages' => true,

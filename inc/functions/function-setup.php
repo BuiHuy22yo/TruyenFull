@@ -75,3 +75,47 @@ if (!function_exists('register_scripts')) {
 
     add_action('wp_enqueue_scripts', 'register_scripts');
 }
+
+/**
+ * Setup Theme Widgets
+ */
+if (!function_exists('ctwp_widgets_init')) {
+    function ctwp_widgets_init()
+    {
+
+        $title_before = '';
+        $title_class = '';
+        $title_after = '<div class="is-divider small"></div>';
+
+        register_sidebar(array(
+            'name' => __('Sidebar', CTWP_DOMAIN),
+            'id' => 'sidebar-main',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => $title_before . '<span class="widget-title ' . $title_class . '"><span>',
+            'after_title' => '</span></span>' . $title_after,
+        ));
+
+
+        register_sidebar(array(
+            'name' => __('Footer 1', CTWP_DOMAIN),
+            'id' => 'sidebar-footer-1',
+            'before_widget' => '<div id="%1$s" class="col pb-0 widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<span class="widget-title">',
+            'after_title' => '</span><div class="is-divider small"></div>',
+        ));
+
+
+        register_sidebar(array(
+            'name' => __('Footer 2', CTWP_DOMAIN),
+            'id' => 'sidebar-footer-2',
+            'before_widget' => '<div id="%1$s" class="col pb-0 widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<span class="widget-title">',
+            'after_title' => '</span><div class="is-divider small"></div>',
+        ));
+    }
+
+    add_action('widgets_init', 'ctwp_widgets_init');
+}
