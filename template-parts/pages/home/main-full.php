@@ -14,7 +14,7 @@ $url = home_url('truyen-full')
         <div class="inner">
             <div class="title d-flex align-items-center">
                 <a href="<?php echo $url ?>">
-                    <h2><?php echo esc_html__('Truyên Đã Hoàn thanh', CTWP_DOMAIN) ?></h2>
+                    <h2><?php echo esc_html__('Truyên Đã Hoàn Thành', CTWP_DOMAIN) ?></h2>
                 </a>
                 <span><?php echo $icon ?></span>
             </div>

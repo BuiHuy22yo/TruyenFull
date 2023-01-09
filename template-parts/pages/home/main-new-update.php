@@ -4,7 +4,8 @@ $array = array(
     'meta_key' => '',
     'meta_value' => '',
 );
-$data = ctwp_get_list_story($array);
+$body = ctwp_get_list_story($array);
+$data = !empty($body) && array_key_exists('data', $body) ? $body['data'] : [];
 $icon = CTWP_ICON_RIGHT;
 $url = home_url('truyen-moi')
 ?>
@@ -19,14 +20,24 @@ $url = home_url('truyen-moi')
                         <a href="<?php echo $url ?>">
                             <h2><?php echo esc_html__('Truyên Mới Cập Nhật', CTWP_DOMAIN) ?></h2>
                         </a>
-<!--                        <span>--><?php //echo $icon ?><!--</span>-->
+                        <span><?php echo $icon ?></span>
                     </div>
                     <div class="filter-cat">
                         <?php echo ctwp_html_categories() ?>
                     </div>
                 </div>
             </div>
-            <div class="list"></div>
+            <?php if ($data && is_array($data)) { ?>
+            <div class="list">
+                <?php foreach ($data as $item) { ?>
+                <div class="item">
+                    <div class="item-title">
+                        <?php echo ctwp_post_title($item->ID) ?>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            <?php } ?>
         </div>
         <div class="col-3">
             <?php get_sidebar(); ?>
